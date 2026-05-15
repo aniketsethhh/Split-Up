@@ -67,7 +67,7 @@ Split expenses. Simplify life.
   </section>
 
 
-<section id="features" className="bg-gray-50 py-20">
+<section id="features" className="bg-background py-20">
   <div className=" container mx-auto px-4 md:px-6 text-center">
 
     <Badge variant="outline" className="bg-green-100 text-green-700">
@@ -85,9 +85,8 @@ Our platform provides all the tools you need to handle shared expenses with ease
 
 <div className="mx-auto mt-12 grid max-w-5xl gap-6 md:grid-cols-2 lg:grid-cols-3">
   {FEATURES.map(({title, description, Icon, bg, color}) => (
-    <Card key={title}
-    className="flex flex-col items-center space-y-4 p-6 text-center "> 
-
+   <Card key={title}
+    className="flex flex-col items-center space-y-4 p-6 text-center hover:shadow-[0_0_20px_rgba(34,197,94,0.3)] transition-shadow duration-300 border border-green-900/20">
  <div className={`rounded-full p-3 ${bg}`}>
 <Icon className={`h-6 w-6 ${color}`}></Icon>
  </div>
@@ -134,7 +133,7 @@ Follow these simple steps to start tracking and splitting your expenses with fri
 
 
 
-<section className="bg-gray-50 py-20">
+<section className="bg-background py-20">
   <div className=" container mx-auto px-4 md:px-6 text-center">
 
     <Badge variant="outline" className="bg-green-100 text-green-700">
@@ -147,7 +146,7 @@ What our users are saying
 
 <div className="mx-auto mt-12 grid max-w-5xl gap-6 md:grid-cols-2 lg:grid-cols-3">
   {TESTIMONIALS.map(({quote, name, role,  image}) => (
-   <Card key={name}>
+  <Card key={name} className="hover:shadow-[0_0_20px_rgba(34,197,94,0.3)] transition-shadow duration-300 border border-green-900/20">
   
   <CardContent className="space-y-4 p-6">
     <p className="text-gray-500">{quote}</p>
@@ -180,7 +179,7 @@ Ready to simplify expense sharing?
     </h2>
 
 <p className="mx-auto max-w-[600px] text-green-100 md:text-xl/relaxed">
-join thousands of users who have made splitting expenses stress-free. 
+Stop doing the math. Start splitting smarter — track every expense, settle every debt, stress-free. 
 </p>
 
 <Button asChild size="lg" className="bg-green-800 hover:opacity-90">
@@ -193,7 +192,7 @@ join thousands of users who have made splitting expenses stress-free.
 
 </section>
 
-<footer className="border-t bg-gray-50 py-12 text-center text-sm text-muted-foreground">
+<footer className="border-t bg-background py-12 text-center text-sm text-muted-foreground">
   Made With ❤️ by Aniket Seth
 
 </footer>
